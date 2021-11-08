@@ -10,5 +10,17 @@
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
 echo "Hello, Welcome to the Calculator Program"
+echo "Which operations would you like to prefer? #Add, #Subtract or #Exit"
+read OPERATION
+case $OPERATION in 
+"Add")
+echo "what are your numbers" 
+read NUM1
+read NUM2
+RESULT= expr $NUM1 + $NUM2
+echo $RESULT
+
+;;
+esac
 
 
